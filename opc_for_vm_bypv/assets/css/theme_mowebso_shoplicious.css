@@ -1,0 +1,476 @@
+/**
+ * Plugin: One Page Checkout for VirtueMart byPV
+ * theme_mowebso_shoplicious.css
+ */
+
+#bypv_cart [type="radio"] {
+    vertical-align: top;
+    width: 17px;
+    height: 17px;
+    margin: 0 3px 0 0;
+}
+
+#bypv_cart [type="radio"] + label {
+    cursor: pointer;
+}
+
+#bypv_cart [type="radio"]:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+#bypv_cart [type="radio"]:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 35px;
+}
+
+#bypv_cart [type="radio"]:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #CDD1DA;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+#bypv_cart [type="radio"]:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #9FD468;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: all .2s;
+}
+
+#bypv_cart [type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+#bypv_cart [type="radio"]:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255, 255, 0, .5);
+}
+
+/*** COMMON ***/
+
+form#bypv_cart a.clean {
+    /*font-weight: bold;
+    text-decoration: none;*/
+}
+
+form#bypv_cart a.clean,
+form#bypv_cart a.clean:hover {
+    /*background: none;
+    color: #000;*/
+}
+
+form#bypv_cart table.clean {
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
+    border: none;
+}
+
+form#bypv_cart table.clean tr,
+form#bypv_cart table.clean td {
+    border: none;
+    vertical-align: middle;
+}
+
+form#bypv_cart div.cart_block {
+    /*border: 1px solid #e6e5e5;
+    border-radius: 4px;
+    background-color: #fff;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;*/
+}
+
+form#bypv_cart div#bypv_cart_shipping_address_select,
+form#bypv_cart div#cart_tos,
+form#bypv_cart div#cart_buttons {
+    border: none;
+}
+
+form#bypv_cart div.cart_block > .cart_block_title {
+    margin: 0 0 10px;
+    padding: 10px 0;
+    font-size: 24px;
+    font-family: "Open Sans Condensed", "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #212121;
+}
+
+form#bypv_cart div.cart_block > fieldset.clean {
+}
+
+form#bypv_cart input[type=text],
+form#bypv_cart input[type=password],
+form#bypv_cart textarea,
+form#bypv_cart select,
+form#bypv_cart input[type=email],
+form#bypv_cart div.chzn-container-single .chzn-single {height: 36px;color: #212121;border: 1px solid #49892d;background-color: #fff;vertical-align: middle;}
+
+form#bypv_cart div.chzn-container-single .chzn-single{
+    line-height: 34px;
+}
+
+form#bypv_cart textarea {
+    min-height: 30px;
+    height: auto;
+}
+
+form#bypv_cart textarea#bypv_cart_customer_note_field {
+    min-height: 60px;
+}
+
+form#bypv_cart input[type=text],
+form#bypv_cart input[type=email],
+form#bypv_cart input[type=password],
+form#bypv_cart textarea {
+    box-shadow: inset 0px 3px 5px #e1e0e0;
+}
+
+form#bypv_cart select,
+form#bypv_cart div.chzn-container-single .chzn-single {
+    box-shadow: inset 0px 0px 10px #e1e0e0;
+}
+
+form#bypv_cart div.chzn-container-active .chzn-single-with-drop {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, .15);
+}
+
+form#bypv_cart div.chzn-container-single .chzn-drop {
+    border: 1px solid #e1e0e0;
+    border-top-width: 0;
+}
+
+form#bypv_cart input[type=text]:focus,
+form#bypv_cart input[type=password]:focus,
+form#bypv_cart textarea:focus,
+form#bypv_cart select:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0 none;
+}
+
+form#bypv_cart input.text_button {
+    /*padding: 6px 12px;
+    font-size: 14px;
+    height: 30px;
+
+    border: 1px solid #bbbbbb;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #a2a2a2;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    */
+}
+
+form#bypv_cart input#bypv_login,
+form#bypv_cart input.checkout_button {
+    /*
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    background-color: #5bb75b;
+    background-image: linear-gradient(to bottom, #62c462, #51a351);
+    background-repeat: repeat-x;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    */
+}
+
+form#bypv_cart div#cart_buttons input.text_button {
+    /*height: 46px;*/
+}
+form#bypv_cart input.text_button,
+form#bypv_cart input#bypv_login,
+form#bypv_cart input.checkout_button{
+    padding:9px 22px;
+    cursor:pointer;
+    vertical-align:middle;
+    font-weight:700;
+    text-transform:uppercase !important;
+    text-decoration:none;
+    font-size:14px;
+    font-family:'Open Sans', Arial, Helvetica, sans-serif !important;
+    border:0;
+    -moz-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
+    -ms-transition-duration:0.2s;
+    transition-duration:0.2s;
+    -webkit-transition-property:background-color !important;
+    -ms-transition-property:background-color !important;
+    -o-transition-property:background-color !important;
+    -moz-transition-property:background-color !important;
+    transition-property:background-color !important;
+    -webkit-border-radius:0px !important;
+    -moz-border-radius:0px !important;
+    border-radius:0px !important;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    display:inline-block;
+    text-align:center;
+}
+form#bypv_cart div#cart_buttons.cart_bottom_img input.checkout_button {
+    background: url(../images/cart_ico.png) no-repeat scroll right 8px #d45e17 !important;
+    color: #FFF !important;
+    padding: 13px 45px 13px 30px;
+}
+
+form#bypv_cart div#cart_buttons input.checkout_button {
+    /*font-size: 17.5px;*/
+}
+
+form#bypv_cart input.text_button:hover {
+    /*background-position: 0 -15px;
+    background-color: #e6e6e6;
+    color: #333333;
+    */
+}
+
+form#bypv_cart input#bypv_login:hover,
+form#bypv_cart input.checkout_button:hover {
+    /*
+    background-color: #51a351;
+    color: #ffffff;
+    */
+}
+
+/*** Coupon Code ***/
+
+/*** Product List ***/
+
+form#bypv_cart div#bypv_cart_product_list tr.coupon_code input[type=text] {
+    height: 22px;
+    line-height: 14px;
+    font-size: 11px;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.coupon_code input[type=button] {
+    padding: 2px 12px;
+    height: 22px;
+}
+
+/*** Product List - COLS ***/
+
+form#bypv_cart table#cart_product_table thead th,
+form#bypv_cart table#cart_product_table td td {
+    color: #333;
+}
+
+form#bypv_cart table#cart_product_table thead th {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: normal;
+    background: none;
+}
+
+form#bypv_cart table#cart_product_table td {
+    font-size: 12px;
+}
+
+form#bypv_cart table#cart_product_table thead th,
+form#bypv_cart table#cart_product_table td {
+    border: 0px solid #e6e5e5;
+    padding: 0.5em 0.5em 1em 0.5em;
+}
+
+form#bypv_cart table#cart_product_table thead th,
+form#bypv_cart table#cart_product_table tr.product td {
+    border-bottom-width: 1px;
+}
+
+form#bypv_cart table#cart_product_table tbody td.name div.image img {
+    max-height: 5em;
+}
+
+form#bypv_cart table#cart_product_table tbody td.name div.text a {
+    font-size: 14px;
+}
+
+form#bypv_cart table#cart_product_table tbody td.price_excl_tax,
+form#bypv_cart table#cart_product_table tbody td.total_excl_tax,
+form#bypv_cart table#cart_product_table tbody td.total_incl_tax {
+    font-weight: bold;
+    color: #02AA02;
+}
+
+form#bypv_cart table#cart_product_table tbody td.total_incl_tax {
+    font-size: 14px;
+}
+
+form#bypv_cart table#cart_product_table td.tax,
+form#bypv_cart table#cart_product_table td.discount,
+form#bypv_cart table#cart_product_table td.tax {
+    font-size: 11px;
+    color: #777;
+}
+
+form#bypv_cart table#cart_product_table tbody td span.original {
+    text-decoration: line-through;
+}
+
+form#bypv_cart table#cart_product_table tfoot tr.subtotal td,
+form#bypv_cart table#cart_product_table tfoot tr.total td,
+form#bypv_cart table#cart_product_table tfoot tr.total_currency td {
+}
+
+form#bypv_cart table#cart_product_table tfoot tr.coupon_code td,
+form#bypv_cart table#cart_product_table tfoot tr.shipment td,
+form#bypv_cart table#cart_product_table tfoot tr.payment td {
+    padding: 0.2em 0.5em;
+}
+
+form#bypv_cart table#cart_product_table tfoot tr.subtotal td.label,
+form#bypv_cart table#cart_product_table tfoot tr.total td.label,
+form#bypv_cart table#cart_product_table tfoot tr.total_currency td.label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form#bypv_cart table#cart_product_table tfoot tr.total td.total_incl_tax,
+form#bypv_cart table#cart_product_table tfoot tr.total_currency td.total_incl_tax {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form#bypv_cart table#cart_product_table tfoot td.label label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*** Quantity Controls ***/
+
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input,
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_update,
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_remove {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input {
+    width: 16px;
+    height: 16px;
+}
+
+form#bypv_cart div#bypv_cart_product_list input.bypv_quantity {
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input.bypv_quantity_plus {
+    background: url('../images/button_plus.png') no-repeat top left;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input.bypv_quantity_minus {
+    background: url('../images/button_minus.png') no-repeat top left;
+    margin-top: 2px;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_update {
+    background: url('../images/button_refresh.png') no-repeat top left;
+    width: 24px;
+    height: 24px;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_remove {
+    background: url('../images/button_remove.png') no-repeat top left;
+    width: 24px;
+    height: 24px;
+}
+
+/*** Shipments / Payments ***/
+
+form#bypv_cart div.method_block div.info {
+    margin: 0 0 1em 0;
+    padding: 0.5em;
+    background-color: #eee;
+    border: 1px solid #e6e5e5;
+    border-radius: 4px;
+    font-size: 0.8em;
+    text-align: justify;
+    text-transform: uppercase;
+    clear: both;
+}
+
+form#bypv_cart div.method_block span.vmshipment_description,
+form#bypv_cart div.method_block span.vmpayment_description,
+form#bypv_cart div.method_block span.vmshipment_cost,
+form#bypv_cart div.method_block span.vmpayment_cost {
+    font-size: 0.85em;
+    color: inherit;
+}
+
+/*** Login / Logout ***/
+
+form#bypv_cart div#bypv_cart_login.logout p {
+    line-height: 30px;
+}
+
+/*** Address ***/
+
+/*** Customer Comment ****/
+
+/*** TOS ****/
+
+div#cart_tos label {
+    font-size: 1.2em;
+}
+
+div#cart_tos label a:hover {
+    text-decoration: underline;
+}
+
+/*** Buttons ****/
+
+form#bypv_cart div#cart_buttons {
+    text-align: left;
+    padding: 0 15px;
+}
+
+/**********************/
+
+.cart_title-top_right h3.cart_block_title {
+    color: #FFF;
+    background: none repeat scroll 0% 0% #49892D;
+    text-transform: uppercase;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 17px 20px;
+    margin: 0px !important;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cart_top_right {
+    background: #f5f5f5;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+    padding: 0;
+}
+
+input.bypv_product_update {
+    background: url(../images/cart_upd_ico.jpg) no-repeat 0 0;
+}
+
+input.bypv_product_update:hover {
+    background: url(../images/cart_upd_ico.jpg) no-repeat -22px 0;
+}
+

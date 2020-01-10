@@ -1,0 +1,238 @@
+/**
+ * Plugin: One Page Checkout for VirtueMart byPV
+ * Copyright (C) 2014 byPV.org <info@bypv.org>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*** COMMON ***/
+
+form#bypv_cart div.cart_block > fieldset {
+	padding: 0.5em;
+}
+
+form#bypv_cart input[type=text],
+form#bypv_cart input[type=password],
+form#bypv_cart select,
+form#bypv_cart div.chzn-container-single .chzn-single
+{
+	margin: 0;
+	padding: 4px;
+	height: 26px;
+	line-height: 16px;
+	background: #e8e8e8 url('../../../components/com_virtuemart/assets/images/vmgeneral/backgrounds.png') top left repeat-x;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #777;
+}
+
+form#bypv_cart div.chzn-container-active .chzn-single-with-drop {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background: #fff;
+}
+
+form#bypv_cart div.chzn-container-single .chzn-drop {
+	border: 1px solid #ccc;
+	border-top-width: 0;
+}
+
+form#bypv_cart input[type=text]:hover,
+form#bypv_cart input[type=password]:hover
+{
+	background-position: 0 -40px;
+	color: #000;
+	text-decoration: none;
+}
+
+form#bypv_cart input.text_button {
+	padding: 4px 12px;
+	height: 26px;
+
+	background: #e8e8e8 url('../../../components/com_virtuemart/assets/images/vmgeneral/backgrounds.png') repeat-x;
+	background-position: 0 -160px;
+	border: 1px solid #00a000;
+	border-radius: 4px;
+	color: #fff;
+
+	letter-spacing: 1px;
+}
+
+form#bypv_cart div.checkout_button {
+	font-weight: bold;
+}
+
+form#bypv_cart input.text_button:hover {
+	background-position: 0 -200px;
+	color: #f2f2f2;
+}
+
+form#bypv_cart input.image_button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	letter-spacing: normal;
+}
+
+form#bypv_cart div.address_block > .cart_block_title,
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_update,
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_remove
+{
+	background: url('../../../components/com_virtuemart/assets/images/vm2-sprite.png') no-repeat;
+}
+
+form#bypv_cart table {
+	border-collapse: separate;
+	border-spacing: 0 0.5em;
+}
+
+form#bypv_cart table tr,
+form#bypv_cart table td
+{
+	border: none;
+	vertical-align: middle;
+}
+
+/*** Coupon Code ***/
+
+/*** Product List ***/
+
+form#bypv_cart table#cart_product_table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid #ddd;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.coupon_code input[type=text] {
+	height: 22px;
+	line-height: 14px;
+	font-size: 11px;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.coupon_code input[type=button] {
+	padding: 2px 12px;
+	height: 22px;
+}
+
+/*** Product List - COLS ***/
+
+form#bypv_cart table#cart_product_table thead th,
+form#bypv_cart table#cart_product_table td td
+{
+	color: #333;
+}
+
+form#bypv_cart table#cart_product_table thead th {
+	background-color: #eee;
+	border-bottom: 2px solid #ddd;
+	padding: 0.5em 0.2em;
+}
+
+form#bypv_cart table#cart_product_table td {
+	padding: 0.2em;
+}
+
+form#bypv_cart table#cart_product_table td span.original
+{
+	text-decoration: line-through;
+}
+
+form#bypv_cart table#cart_product_table tfoot tr.subtotal td,
+form#bypv_cart table#cart_product_table tfoot tr.total td,
+form#bypv_cart table#cart_product_table tfoot tr.total_currency td
+{
+	line-height: 2em;
+	background-color: #f5f5f5;
+	font-weight: bold;
+}
+
+form#bypv_cart table#cart_product_table td.name div.image img {
+	max-height: 5em;
+}
+
+form#bypv_cart table#cart_product_table tfoot td.label label {
+	font-weight: bold;
+}
+
+/*** Quantity Controls ***/
+
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input {
+	width: 15px;
+	height: 14px;
+	background: url('../../../components/com_virtuemart/assets/images/vmgeneral/quantity-controls.png') no-repeat top left;
+}
+
+form#bypv_cart div#bypv_cart_product_list input.bypv_quantity {
+	font-weight: bold;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input.bypv_quantity_minus {
+	background-position: -15px 0;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_update {
+	background-position: 0 0;
+}
+
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_remove {
+	background-position: 0 -212px;
+}
+
+/*** Login / Logout ***/
+
+form#bypv_cart div#bypv_cart_login.logout p
+{
+	line-height: 26px;
+}
+
+/*** Address ***/
+
+form#bypv_cart div.address_block > .cart_block_title {
+	min-height: 24px;
+	padding: 0 0 0 30px;
+}
+
+form#bypv_cart div#bypv_cart_billing_address > .cart_block_title {
+	background-position: 0 -138px;
+}
+
+form#bypv_cart div#bypv_cart_shipping_address > .cart_block_title {
+	background-position: 0 -284px;
+}
+
+form#bypv_cart div.address_block table {
+	border-collapse: separate;
+	border-spacing: 0 0.5em;
+}
+
+/*** Customer Comment ****/
+
+div#cart_comment textarea {
+	padding: 4px;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #777;
+}
+
+div#cart_comment textarea:hover {
+	background-color: #eee;
+	color: #000;
+}
+
+/*** TOS ****/
+
+div#cart_tos label {
+	font-size: 1.2em;
+}

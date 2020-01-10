@@ -1,0 +1,51 @@
+form#bypv_cart table.clean{border-collapse:separate;border-spacing:0 .5em;border:none;}
+form#bypv_cart table.clean tr,form#bypv_cart table.clean td{border:none;vertical-align:middle;}
+form#bypv_cart div#bypv_cart_shipping_address_select,form#bypv_cart div#cart_tos,form#bypv_cart div#cart_buttons{border:none;}
+div#cart_buttons input{width:100%;}
+form#bypv_cart div.cart_block > .cart_block_title{font-size:24px;font-family:"Open Sans Condensed","Open Sans",Arial,Helvetica,sans-serif;font-weight:400;color:#212121;margin:0 0 10px;padding:10px 0;}
+form#bypv_cart input[type=text],form#bypv_cart input[type=password],form#bypv_cart textarea,form#bypv_cart select,form#bypv_cart div.chzn-container-single .chzn-single{color:#212121;border:1px solid #49892d;background-color:#fff;vertical-align:middle;padding:6px 8px; float: left;}
+form#bypv_cart input[type=text].required.success{background:url(/plugins/system/opc_for_vm_bypv/assets/img/gal-icon.png) no-repeat left 0;background-position:187px 1px;color:#1b960c!important;font-weight:600;}
+form#bypv_cart textarea{height:121px;width:85%;display:block!important;margin:0 auto!important;}
+form#bypv_cart input[type=text],form#bypv_cart input[type=password],form#bypv_cart textarea{box-shadow:inset 0 3px 5px #e1e0e0;}
+form#bypv_cart select,form#bypv_cart div.chzn-container-single .chzn-single{box-shadow:inset 0 0 10px #e1e0e0;}
+form#bypv_cart div.chzn-container-active .chzn-single-with-drop{border-bottom-left-radius:0;border-bottom-right-radius:0;box-shadow:0 4px 5px rgba(0,0,0,.15);}
+form#bypv_cart div.chzn-container-single .chzn-drop{border:1px solid #e1e0e0;border-top-width:0;}
+form#bypv_cart input[type=text]:focus,form#bypv_cart input[type=password]:focus,form#bypv_cart textarea:focus,form#bypv_cart select:focus{outline:0 none;border-color:rgba(82,168,236,0.8);}
+form#bypv_cart .cart_bottom_img input.text_button.checkout_button.blocked__checkout_button{background-color:rgba(212,94,23,0.25)!important;cursor:default;transition:all 1s;}
+form#bypv_cart div#bypv_cart_product_list tr.coupon_code input[type=text]{height:22px;line-height:14px;font-size:11px;}
+form#bypv_cart div#bypv_cart_product_list tr.coupon_code input[type=button]{height:22px;padding:2px 12px;}
+form#bypv_cart table#cart_product_table thead th,form#bypv_cart table#cart_product_table td td{color:#333;}
+form#bypv_cart table#cart_product_table thead th{text-transform:uppercase;font-size:10px;font-weight:400;background:none;}
+form#bypv_cart table#cart_product_table td{font-size:12px;}
+form#bypv_cart table#cart_product_table thead th,form#bypv_cart table#cart_product_table td{border:0 solid #e6e5e5;padding:.5em .5em 1em;}
+form#bypv_cart table#cart_product_table thead th,form#bypv_cart table#cart_product_table tr.product td{border-bottom-width:1px;}
+form#bypv_cart table#cart_product_table tbody td.name div.image img{max-height:5em;}
+form#bypv_cart table#cart_product_table tbody td.price_excl_tax,form#bypv_cart table#cart_product_table tbody td.total_excl_tax,form#bypv_cart table#cart_product_table tbody td.total_incl_tax{font-weight:700;color:#02AA02;}
+form#bypv_cart table#cart_product_table td.tax,form#bypv_cart table#cart_product_table td.discount,form#bypv_cart table#cart_product_table td.tax{font-size:11px;color:#777;}
+form#bypv_cart table#cart_product_table tbody td span.original{text-decoration:line-through;}
+form#bypv_cart table#cart_product_table tfoot tr.coupon_code td,form#bypv_cart table#cart_product_table tfoot tr.shipment td,form#bypv_cart table#cart_product_table tfoot tr.payment td{padding:.2em .5em;}
+form#bypv_cart table#cart_product_table tfoot tr.total td.total_incl_tax,form#bypv_cart table#cart_product_table tfoot tr.total_currency td.total_incl_tax{font-size:14px;font-weight:700;}
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input,form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_update,form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_remove{border:none;margin:0;padding:0;}
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input{width:16px;height:16px;}
+form#bypv_cart div#bypv_cart_product_list input.bypv_quantity{height:32px;}
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input.bypv_quantity_plus{background:url(../images/button_plus.png) no-repeat top left;}
+form#bypv_cart div#bypv_cart_product_list tr.product span.bypv_quantity_controls input.bypv_quantity_minus{background:url(../images/button_minus.png) no-repeat top left;margin-top:2px;}
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_update{background:url(../images/button_refresh.png) no-repeat top left;width:24px;height:24px;}
+form#bypv_cart div#bypv_cart_product_list tr.product input.bypv_product_remove{background:url(../images/button_remove.png) no-repeat top left;width:24px;height:24px;}
+form#bypv_cart div.method_block div.info{background-color:#eee;border:1px solid #e6e5e5;border-radius:4px;font-size:.8em;text-align:justify;text-transform:uppercase;margin:0 0 1em;padding:.5em;}
+form#bypv_cart div.method_block span.vmshipment_description,form#bypv_cart div.method_block span.vmpayment_description,form#bypv_cart div.method_block span.vmshipment_cost,form#bypv_cart div.method_block span.vmpayment_cost{font-size:.85em;color:inherit;}
+form#bypv_cart div#bypv_cart_login.logout p{line-height:30px;}
+div#cart_tos label{font-size:1.2em;}
+div#cart_tos label a:hover{text-decoration:underline;}
+form#bypv_cart div#cart_buttons{text-align:left;padding:0 15px 0 0;}
+div#conShop{height:20px;line-height:1.5em;color:#49892D;padding-top:29px;}
+div#conShop i{text-decoration:underline;cursor:pointer;}
+div#conShop i:hover{text-decoration:none;cursor:pointer;color:#D25A1B;}
+.cart_top_right{background:#fff;padding:0;}
+.cart_title-top_right h3.cart_block_title{color:#FFF;background:none repeat scroll 0 0 #49892D;text-transform:uppercase;font-family:"Open Sans",Arial,Helvetica,sans-serif;font-weight:700;font-size:14px;text-align:center;margin:0!important;padding:17px 20px;}
+div#cart_customer input,.delimiter_userEmaile_group input{font-size:1.15em;font-weight:100;font-family:'Open Sans Condensed', 'Open Sans', Arial, Helvetica, sans-serif;}
+.delimiter_userEmaile_group{margin-top:2.6px;}
+#multiCartTel .top_bloc_text{display:none;}
+#bypv_billing_address_email_field.bypv_billing_address_email-hide,.shiny-button{display:none!important;}
+form#bypv_cart table#cart_product_table tbody td.name div.text a,form#bypv_cart table#cart_product_table tbody td.total_incl_tax{font-size:14px;}
+form#bypv_cart table#cart_product_table tfoot tr.subtotal td.label,form#bypv_cart table#cart_product_table tfoot tr.total td.label,form#bypv_cart table#cart_product_table tfoot tr.total_currency td.label,form#bypv_cart table#cart_product_table tfoot td.label label{text-transform:uppercase;font-weight:700;}
